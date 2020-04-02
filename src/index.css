@@ -1,5 +1,27 @@
+/*-------Global Stylings-------*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Comfortaa', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:#01B1AF;
+  text-shadow: 1px 1px 2px white;
+}
+
+p, span, h2{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px black;
+  letter-spacing: 2px;
+
+}
+
+/*-------End Global Stylings-------*/

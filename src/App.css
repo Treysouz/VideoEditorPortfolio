@@ -1,59 +1,128 @@
-.grid{
+.grid {
   display: grid;
   gap: 1%;
-  background-image: radial-gradient(circle, rgb(50,20,50), black);
+  background-image: radial-gradient(circle, rgb(50, 20, 50), black);
   width: 100vw;
   height: 100vh;
-  grid-template-columns: repeat(auto-fit,minmax(23vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(23vw, 1fr));
   padding: 1%;
   grid-auto-rows: 13vh;
-  
 }
 
-.grid-item{
+.gridItem {
+  position: relative;
   color: white;
   height: 100%;
   width: 100%;
-  border: 2px ridge purple;
-
-
-
-
 }
 
-.grid-item:hover{
+.gridItem .overlay {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: .2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .5s;
+}
+
+.gridItem .overlay:hover {
+  opacity: 1;
+}
+
+.gridItem .overlay i{
+  color: #01B1AF;
+  font-size: 5rem;
+}
+
+.actionTile {
+  border: 2px ridge purple;
+  transition: box-shadow .5s, transform .5s;
+}
+
+.actionTile:hover {
   box-shadow: 2px 2px 3px gray;
   cursor: pointer;
   transform: scale(1.01);
-
 }
-.name{
+
+.name {
   grid-column: span 3;
   grid-row: span 1;
   display: flex;
   align-items: center;
-  font-size: 4rem;
-  font-family: 'Comfortaa', cursive;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color:#01B1AF;
-  text-shadow: 1px 1px 2px white;
 }
-.bigScreen{
+
+.mainTile {
   grid-column: span 3;
   grid-row: span 4;
   color: white;
 }
-.next, .previous{
+
+.nextButton, .previousButton {
   grid-row: span 2;
   grid-column: span 1;
   color: white;
 }
-.social{
-  grid-column: span 1;
-  grid-row: span 2;
-  color: white;
+
+.nextButton .overlay p, .previousButton .overlay p{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 20%;
+  opacity: 0;
 }
 
+.nextButton:hover p, .previousButton:hover p{
+  opacity: 1;
+}
 
+.nextButton .overlay i, .previousButton .overlay i{
+  text-align: center;
+}
+
+.previewVideos{
+  grid-row: span 5;
+  grid-column: span 1;
+}
+
+.socialLinks {
+  grid-column: span 1;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.socialLinks i {
+  font-size: 5rem;
+  color: #01B1AF;
+  text-shadow: 1px 1px 2px white;
+  width: auto;
+  transition: text-shadow .5s;
+}
+
+.socialLinks i span {
+  font-size: 1.8rem;
+  padding-left: 10%;
+  vertical-align: middle;
+  font-weight: 600;
+  transition: text-shadow .5s;
+  white-space: nowrap;
+}
+
+.socialLinks i:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 3px white;
+}
+
+.socialLinks i:hover span {
+  text-shadow: 0px 0px 5px #01B1AF;
+}
+
+/* ----- Media Queries ----- */
+
+/* ----- End Media Queries ----- */
