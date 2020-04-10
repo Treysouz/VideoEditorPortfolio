@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: .2;
+  opacity: .5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,13 +33,14 @@
   opacity: 1;
 }
 
-.gridItem .overlay i{
+.gridItem .overlay i {
   color: #01B1AF;
   font-size: 5rem;
 }
 
 .actionTile {
-  border: 2px ridge purple;
+  border: 3px ridge purple;
+
   transition: box-shadow .5s, transform .5s;
 }
 
@@ -56,6 +57,7 @@
   align-items: center;
 }
 
+
 .mainTile {
   grid-column: span 3;
   grid-row: span 4;
@@ -68,22 +70,31 @@
   color: white;
 }
 
-.nextButton .overlay p, .previousButton .overlay p{
+.nextButton img, .previousButton img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  filter: brightness(80%);
+  object-fit: cover;
+
+}
+
+.nextButton .overlay p, .previousButton .overlay p {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 20%;
   opacity: 0;
 }
 
-.nextButton:hover p, .previousButton:hover p{
+.nextButton:hover p, .previousButton:hover p {
   opacity: 1;
 }
 
-.nextButton .overlay i, .previousButton .overlay i{
+.nextButton .overlay i, .previousButton .overlay i {
   text-align: center;
 }
 
-.previewVideos{
+.previewVideos {
   grid-row: span 5;
   grid-column: span 1;
 }
@@ -95,6 +106,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding-left: 10%;
 }
 
 .socialLinks i {

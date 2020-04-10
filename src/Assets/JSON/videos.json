@@ -1,9 +1,44 @@
 {
     "videos" :{
         "Reel":{
-            "link" : "https://vimeo.com/365977523",
+            "link" : "https://player.vimeo.com/video/365977523",
             "description":"",
             "thumbnail":"https://i.vimeocdn.com/video/821873320.webp?mw=900&mh=514"
+        },
+        "Believe Me":{
+            "link" : "https://player.vimeo.com/video/226241431",
+            "description":"",
+            "thumbnail":"https://i.vimeocdn.com/video/689202651.webp?mw=1200&mh=675&q=70"
+        },
+        "I Am":{
+            "link" : "https://player.vimeo.com/video/281465705",
+            "description":"",
+            "thumbnail":"https://i.vimeocdn.com/video/715213546.webp?mw=1200&mh=675&q=70"
+        },
+        "Virgin Atlantic":{
+            "link" : "https://player.vimeo.com/video/358959447",
+            "description":"",
+            "thumbnail":"https://i.vimeocdn.com/video/812725013.webp?mw=1200&mh=675&q=70"
+        },
+        "Maxitone":{
+            "link" : "https://player.vimeo.com/video/358959427",
+            "description":"",
+            "thumbnail":"https://i.vimeocdn.com/video/812724996.webp?mw=1200&mh=675&q=70"
+        },
+        "Vaporize":{
+            "link" : "https://player.vimeo.com/video/113769929",
+            "description":"",
+            "thumbnail":"https://i.vimeocdn.com/video/499210813.webp?mw=1000&mh=563"
+        },
+        "OITNB Actress Selenis Leyva On Importance of Afro-Latina Representation":{
+            "link" : "https://www.youtube.com/watch?v=ELV1TQ9dcEw",
+            "description":"",
+            "thumbnail":"https://i.ytimg.com/vi/ELV1TQ9dcEw/maxresdefault.jpg"
+        },
+        "Destiny The Taken King Dev Shares Which Subclass will Overpower in Crucible - E3 2015":{
+            "link" : "https://www.youtube.com/watch?v=QX2J8c1A6Vg",
+            "description":"",
+            "thumbnail":"https://i.ytimg.com/vi/QX2J8c1A6Vg/maxresdefault.jpg"
         }
     }
 }
