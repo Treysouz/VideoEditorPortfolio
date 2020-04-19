@@ -1,44 +1,52 @@
 {
-    "videos" :{
-        "Reel":{
-            "link" : "https://player.vimeo.com/video/365977523",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/821873320.webp?mw=900&mh=514"
+    "videos": {
+        "Reel": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/Reel.mp4?alt=media&token=208c0429-c175-42c6-92f1-75a98e5e6094",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis viverra nibh cras pulvinar mattis nunc sed blandit libero.",
+            "thumbnail": "https://i.vimeocdn.com/video/821873320.webp?mw=900&mh=514",
+            "name": "Reel"
         },
-        "Believe Me":{
-            "link" : "https://player.vimeo.com/video/226241431",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/689202651.webp?mw=1200&mh=675&q=70"
+        "The Rest of Your Life": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/TheRestOfYourLife.mp4?alt=media&token=6167fdde-c03e-48cc-a05c-b1ab005a12bb",
+            "description": "Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sed lectus vestibulum mattis ullamcorper. Risus nec feugiat in fermentum posuere urna. At augue eget arcu dictum varius duis at consectetur.",
+            "thumbnail": "https://i.vimeocdn.com/video/689202553.webp?mw=1200&mh=675&q=70",
+            "name": "The Rest of Your Life"
         },
-        "I Am":{
-            "link" : "https://player.vimeo.com/video/281465705",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/715213546.webp?mw=1200&mh=675&q=70"
+        "I Am": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/Iam.mp4?alt=media&token=cfc5b95f-92a1-4364-bde2-e0b3b2a46a31",
+            "description": "",
+            "thumbnail": "https://i.vimeocdn.com/video/715213546.webp?mw=1200&mh=675&q=70",
+            "name": "I Am"
         },
-        "Virgin Atlantic":{
-            "link" : "https://player.vimeo.com/video/358959447",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/812725013.webp?mw=1200&mh=675&q=70"
+        "Virgin Atlantic": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/VirginAtlantic.mp4?alt=media&token=d89c1096-380e-43ac-b4db-047127f45c6e",
+            "description": "",
+            "thumbnail": "https://i.vimeocdn.com/video/812725013.webp?mw=1200&mh=675&q=70",
+            "name": "Virgin Atlantic"
         },
-        "Maxitone":{
-            "link" : "https://player.vimeo.com/video/358959427",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/812724996.webp?mw=1200&mh=675&q=70"
+        "Maxitone": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/Maxitone.mp4?alt=media&token=5b409d7a-2683-47e5-acb6-125bde2b251c",
+            "description": "",
+            "thumbnail": "https://i.vimeocdn.com/video/812724996.webp?mw=1200&mh=675&q=70",
+            "name": "Maxitone"
         },
-        "Vaporize":{
-            "link" : "https://player.vimeo.com/video/113769929",
-            "description":"",
-            "thumbnail":"https://i.vimeocdn.com/video/499210813.webp?mw=1000&mh=563"
+        "Vaporize": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/Vaporize.mp4?alt=media&token=d1b6159a-4ebf-4b79-8fa7-9590d3c7e943",
+            "description": "",
+            "thumbnail": "https://i.vimeocdn.com/video/499210813.webp?mw=1000&mh=563",
+            "name": "Vaporize"
         },
-        "OITNB Actress Selenis Leyva On Importance of Afro-Latina Representation":{
-            "link" : "https://www.youtube.com/watch?v=ELV1TQ9dcEw",
-            "description":"",
-            "thumbnail":"https://i.ytimg.com/vi/ELV1TQ9dcEw/maxresdefault.jpg"
+        "Importance of Afro-Latina Representation": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/OITNB.mp4?alt=media&token=b037713f-557a-4155-bcb0-ee1f4852662d",
+            "description": "",
+            "thumbnail": "https://i.ytimg.com/vi/ELV1TQ9dcEw/maxresdefault.jpg",
+            "name": "Importance of Afro-Latina Representation"
         },
-        "Destiny The Taken King Dev Shares Which Subclass will Overpower in Crucible - E3 2015":{
-            "link" : "https://www.youtube.com/watch?v=QX2J8c1A6Vg",
-            "description":"",
-            "thumbnail":"https://i.ytimg.com/vi/QX2J8c1A6Vg/maxresdefault.jpg"
+        "Destiny The Taken King - E3 2015": {
+            "link": "https://firebasestorage.googleapis.com/v0/b/videoeditorportfolio-a5af8.appspot.com/o/destiny.mp4?alt=media&token=73265f71-2868-4eb8-8cbf-5ed9b735dde7",
+            "description": "",
+            "thumbnail": "https://i.ytimg.com/vi/QX2J8c1A6Vg/maxresdefault.jpg",
+            "name": "Destiny The Taken King - E3 2015"
         }
     }
 }
