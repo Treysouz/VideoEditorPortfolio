@@ -33,7 +33,7 @@ a:visited {
 
 strong {
   font-weight: 900;
-  text-shadow: 0px 0px 2px turquoise;
+  text-shadow: 0px 0px 2px rgb(64, 224, 208);
 }
 
 iframe {
