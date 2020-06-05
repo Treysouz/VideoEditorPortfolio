@@ -9,7 +9,7 @@
   grid-template-columns: repeat(auto-fit, minmax(23vw, 1fr));
   padding: 1%;
   grid-auto-rows: 13vh;
-  position: relative;
+  position: fixed;
 }
 
 .gridItem {
@@ -43,7 +43,7 @@
 
 /* End Grid Styles */
 
-/* MainTile Styles */
+/* Main Video Tile Styles */
 
 .mainTile {
   grid-column: span 3;
@@ -57,7 +57,9 @@
   cursor: pointer;
 }
 
-/* End MainTile Styles */
+/* End  Main Video Tile Styles */
+
+/* Action Tile Styles */
 
 .actionTile {
   transition: box-shadow .5s, transform .5s;
@@ -68,6 +70,10 @@
   cursor: pointer;
   transform: scale(1.01);
 }
+
+/* End Action Tile Styles */
+
+/* Header Styles */
 
 .header {
   grid-column: span 2;
@@ -83,7 +89,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
+  flex-wrap: wrap;
 }
 
 .header .projectInfoContainer h2 {
@@ -131,6 +138,20 @@
   text-shadow: 0px 0px 5px #01B1AF;
 }
 
+.header .fa-fist-raised {
+  opacity: 0;
+  transition: opacity 2s;
+  color: black;
+}
+
+.header .fa-fist-raised:hover {
+  opacity: 1;
+}
+
+/* End Header Styles */
+
+/* Next Button Tile Styles */
+
 .nextTile {
   padding-bottom: 2%;
 }
@@ -166,6 +187,10 @@
   text-shadow: 2px 2px 2px black;
 }
 
+/* End Next Button Tile Styles */
+
+/* Previous Button Tile Styles */
+
 .previewTile {
   grid-row: span 5;
   grid-column: span 1;
@@ -183,6 +208,7 @@
 
 .previewTile img {
   width: 100%;
+  height: 100%;
   padding-bottom: 2%;
   padding-right: 1%;
   scroll-snap-align: start;
@@ -198,11 +224,13 @@
   cursor: pointer;
 }
 
-
-
 .previewTile .overlay:hover h2 {
   opacity: 1;
 }
+
+/* End Previous Button Tile Styles */
+
+/* Social Links Styles */
 
 .socialLinks {
   grid-column: span 2;
@@ -244,6 +272,10 @@
   opacity: 1;
 }
 
+/* End Social Links Styles */
+
+/* Module Styles */
+
 .moduleContainer {
   position: absolute;
   width: 100vw;
@@ -277,7 +309,7 @@
   color: white;
   text-shadow: 1px 1px 1px black;
   right: 5%;
-  top: 10%;
+  top: 5%;
   opacity: .7;
 }
 
@@ -290,17 +322,164 @@
 .moduleContainer .module h2 {
   font-size: 3rem;
   text-align: center;
-  text-decoration: underline;
+  text-decoration-color: turquoise;
   text-shadow: 2px 2px 2px black;
 }
 
-.moduleContainer .module p {
+.moduleContainer .module ul {
+  margin-top: 10%;
+}
+
+.moduleContainer .module li {
   font-size: 1.5rem;
-  padding-top: 5%;
   font-weight: 600;
 }
 
+/* End Module Styles */
+
 /* ----- Media Queries ----- */
+
+@media (max-width: 1700px), (max-height: 880px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .header .projectInfoContainer h2, .header .projectInfoContainer i span, .socialLinks i span, .nextTile .overlay p, .previousTile .overlay p, .previewTile .overlay h2, .moduleContainer .module li {
+    font-size: 1.2rem;
+  }
+  .header .projectInfoContainer .videoTime {
+    font-size: 1.1rem;
+  }
+  .header .projectInfoContainer i, .socialLinks i, .moduleContainer .module i {
+    font-size: 2rem;
+  }
+  .gridItem .overlay i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px), (max-height: 650px) {
+  h1, .moduleContainer .module h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+  }
+  .moduleContainer .module {
+    padding: 5% 15%;
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 1000px), (max-height: 600px) {
+  .grid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    grid-auto-rows: 12.5%;
+    max-height: 100vh;
+  }
+  h1, .moduleContainer .module h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .header .projectInfoContainer h2, .header .projectInfoContainer i span, .socialLinks i span, .nextTile .overlay p, .previousTile .overlay p, .previewTile .overlay h2, .moduleContainer .module li {
+    font-size: 1rem;
+  }
+  .header .projectInfoContainer .videoTime {
+    font-size: 1rem;
+  }
+  .header .projectInfoContainer i, .socialLinks i, .socialLinks i, .moduleContainer .module i {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 1px white;
+  }
+  .gridItem .overlay i {
+    font-size: 1.5rem;
+  }
+  .mainTile {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+  video {
+    object-fit: contain;
+  }
+  .previewTile {
+    grid-row: span 2;
+    grid-column: span 3;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: none;
+  }
+  .previewTile .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  .nextTile, .previousTile {
+    grid-row: span 1;
+  }
+  .previewTile .thumbnailContainer {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .previewTile img {
+    padding-bottom: 0;
+    padding-right: 0;
+    width: auto;
+    height: 100%;
+    max-width: 60vw;
+    padding: 0 2%;
+    border-right: 3px ridge rgba(1, 177, 175, .5);
+  }
+  .header, .socialLinks {
+    margin-top: 5%;
+    grid-column: span 4;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header .projectInfoContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .header .projectInfoContainer h2 {
+    display: inline-block;
+    width: auto;
+    padding-right: 2%;
+  }
+  .header .projectInfoContainer .videoTime {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .header .projectInfoContainer h2, .header .projectInfoContainer i span, .socialLinks i span, .nextTile .overlay p, .previousTile .overlay p, .header .projectInfoContainer .videoTime {
+    font-size: .8rem;
+  }
+  .gridItem .overlay i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  .header .projectInfoContainer h2, .header .projectInfoContainer i span, .socialLinks i span, .header .projectInfoContainer .videoTime {
+    font-size: .8rem;
+  }
+  .nextTile .overlay p, .previousTile .overlay p {
+    font-size: .55rem;
+  }
+  .gridItem .overlay i {
+    font-size: 1.5rem;
+  }
+}
 
 /* ----- End Media Queries ----- */
 

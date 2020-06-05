@@ -17,19 +17,20 @@ export default class App extends Component {
       currentIndex: 0,
       previousVideo: "",
       nextVideo: "",
-      currentVideo: "",
+      currentVideo:
+        "https://www.googleapis.com/drive/v3/files/1GKYacS3N7HZl9GXRKe3fzxdwNsbjdhUV?key=AIzaSyDLMPtmXOuSgxJ91aYgsRxqAvW66m40b_g&alt=media",
       otherVideos: [],
       displayModule: false,
       currentTime: "",
-      videoDuration:"",
+      videoDuration: "",
     };
   }
-
+  //If component mounts, call setVideos with the current index as the parameter and set interval to track every second.
   componentDidMount() {
     this.setVideos(this.state.currentIndex);
     setInterval(this.getCurrentTime, 1000);
   }
-
+  // Populate the prev and next button thumbnails based on index and set this.state.otherVideos to an array with the video thumbnails that are left.
   sortVideos = (prev, next) => {
     var sortIndex = next + 1;
     if (sortIndex === videoNames.length) {
@@ -48,7 +49,7 @@ export default class App extends Component {
       otherVideos: newOtherVideos,
     });
   };
-
+  // Change index based on what video was clicked or if the next/prev buttons are clicked.
   setVideos = (index) => {
     var newNextVideo;
     var newPrevVideo;
@@ -77,65 +78,79 @@ export default class App extends Component {
       currentVideo: VideoList.videos[videoNames[index]],
     });
   };
-
+  //set this.state.displayModule to true and pause video.
   openModule = () => {
     this.setState({
       displayModule: true,
     });
     document.getElementById("currentVideo").pause();
   };
-
+  //set this.state.displayModule to false and play video.
   closeModule = () => {
     this.setState({
       displayModule: false,
     });
     document.getElementById("currentVideo").play();
   };
-
+  //set this.state.currentTime and this.state.videoDuration to the currently viewing videos current time and video duration respectively.
   getCurrentTime = () => {
     this.setState({
       currentTime: document.getElementById("currentVideo").currentTime,
-      videoDuration:  document.getElementById("currentVideo").duration
+      videoDuration: document.getElementById("currentVideo").duration,
     });
   };
 
   render() {
     return (
       <main className="grid">
+        {/* ----------Main Video Tile---------- */}
         <MainTile
           currentVideo={this.state.currentVideo}
           setVideos={this.setVideos}
           currentIndex={this.state.currentIndex}
         ></MainTile>
+        {/* ----------End Main Video Tile---------- */}
+        {/* ----------Next Video Tile---------- */}
         <NextTile
           nextVideo={this.state.nextVideo}
           currentIndex={this.state.currentIndex}
           setVideos={this.setVideos}
         ></NextTile>
+        {/* ----------End Next Video Tile---------- */}
+        {/* ----------Preview Videos Tile---------- */}
         <PreviewTile
           otherVideos={this.state.otherVideos}
           VideoList={VideoList}
           VideoNames={videoNames}
           setVideos={this.setVideos}
         ></PreviewTile>
+        {/* ----------End Preview Videos Tile---------- */}
+        {/* ----------Previous Video Tile---------- */}
         <PreviousTile
           previousVideo={this.state.previousVideo}
           setVideos={this.setVideos}
           currentIndex={this.state.currentIndex}
         ></PreviousTile>
+        {/* ----------End Previous Video Tile---------- */}
+        {/* ----------Header---------- */}
         <Header
           currentVideo={this.state.currentVideo}
           openModule={this.openModule}
           currentTime={this.state.currentTime}
           videoDuration={this.state.videoDuration}
         ></Header>
+        {/* ----------End Header---------- */}
+        {/* ----------Social Links---------- */}
         <Social></Social>
+        {/* ----------End Social Links---------- */}
+        {/* ----------Module---------- */}
         {this.state.displayModule ? (
           <Module
             currentVideo={this.state.currentVideo}
             closeModule={this.closeModule}
           ></Module>
         ) : null}
+        {/* ----------End Module---------- */}
       </main>
     );
   }
