@@ -13,7 +13,7 @@
     "react-native-video": "^4.4.5",
     "react-scripts": "3.4.1",
     "react-transition-group": "^1.2.1",
-    "video.js": "^7.7.5",
+    "video.js": "^7.20.3",
     "videojs-vimeo": "git+https://github.com/videojs/videojs-vimeo.git",
     "videojs-youtube": "^2.6.1",
     "youtube-api": "^2.0.10"
