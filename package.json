@@ -16,7 +16,7 @@
     "video.js": "^7.7.5",
     "videojs-vimeo": "git+https://github.com/videojs/videojs-vimeo.git",
     "videojs-youtube": "^2.6.1",
-    "youtube-api": "^2.0.10"
+    "youtube-api": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
