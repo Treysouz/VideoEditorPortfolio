@@ -18,7 +18,14 @@ export default class App extends Component {
       previousVideo: "",
       nextVideo: "",
       currentVideo:
-        "https://www.googleapis.com/drive/v3/files/1GKYacS3N7HZl9GXRKe3fzxdwNsbjdhUV?key=AIzaSyDLMPtmXOuSgxJ91aYgsRxqAvW66m40b_g&alt=media",
+        {
+         "link":"src/Assets/Videos/Reel.mp4",
+         "description":[
+            "Editor"
+         ],
+         "thumbnail":"src/Assets/Thumbnails/Reel.png",
+         "name":"Reel"
+      },
       otherVideos: [],
       displayModule: false,
       currentTime: "",

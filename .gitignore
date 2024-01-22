@@ -25,3 +25,6 @@ yarn-error.log*
 
 #videos json
 /src/Assets/JSON
+
+#firebase
+/.firebase

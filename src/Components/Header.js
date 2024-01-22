@@ -24,7 +24,7 @@ export default class Header extends Component {
           </i>
         </div>
 
-        <h1>Jasmine Armstrong <i className="fas fa-fist-raised"></i></h1>
+        <h1>Jasmine Armstrong</h1>
       </section>
     );
   }

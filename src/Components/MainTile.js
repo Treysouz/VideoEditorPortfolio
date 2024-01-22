@@ -5,6 +5,7 @@ export default class MainTile extends Component {
     return (
       <section className="mainTile gridItem">
         <video
+          preload="metadata"
           id="currentVideo"
           onEnded={() => this.props.setVideos(this.props.currentIndex + 1)}
           autoPlay

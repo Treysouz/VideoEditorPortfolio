@@ -50,6 +50,7 @@
   grid-row: span 5;
   color: white;
   transition: box-shadow .5s;
+  background-color: black;
 }
 
 .mainTile:hover {
@@ -78,10 +79,14 @@
 .header {
   grid-column: span 2;
   grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header h1 {
   padding: 1% 0;
+  text-align: center;
 }
 
 .header .projectInfoContainer {
@@ -91,6 +96,7 @@
   align-items: center;
   padding-bottom: 1%;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .header .projectInfoContainer h2 {
@@ -160,6 +166,7 @@
   grid-row: span 2;
   grid-column: span 1;
   color: white;
+  background-color: black;
 }
 
 .nextTile img, .previousTile img {
@@ -192,26 +199,29 @@
 /* Previous Button Tile Styles */
 
 .previewTile {
+  margin-top: 2%;
   grid-row: span 5;
   grid-column: span 1;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-snap-type: y proximity;
+  padding-top: 4%;
   border-top: 3px ridge rgba(1, 177, 175, .5);
+  gap: 2%
 }
 
 .previewTile .thumbnailContainer {
   position: relative;
+  min-height: 300px;
+  background-color: black;
 }
 
 .previewTile img {
   width: 100%;
   height: 100%;
-  padding-bottom: 2%;
-  padding-right: 1%;
   scroll-snap-align: start;
+  object-fit: cover;
 }
 
 .previewTile .overlay h2 {
@@ -397,9 +407,6 @@
     grid-column: span 4;
     grid-row: span 3;
   }
-  video {
-    object-fit: contain;
-  }
   .previewTile {
     grid-row: span 2;
     grid-column: span 3;
@@ -407,6 +414,8 @@
     overflow-x: scroll;
     overflow-y: hidden;
     border: none;
+    margin-top: 0;
+    padding-top: 0;
   }
   .previewTile .overlay {
     width: 100%;
@@ -417,7 +426,7 @@
   }
   .previewTile .thumbnailContainer {
     display: inline-block;
-    width: 100%;
+    width: 300px;
     height: 100%;
   }
   .previewTile img {
@@ -425,9 +434,8 @@
     padding-right: 0;
     width: auto;
     height: 100%;
-    max-width: 60vw;
-    padding: 0 2%;
-    border-right: 3px ridge rgba(1, 177, 175, .5);
+    width: 300px;
+    object-fit: cover;
   }
   .header, .socialLinks {
     margin-top: 5%;
